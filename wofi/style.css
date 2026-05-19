@@ -1,0 +1,63 @@
+/* ══════════════════════════════════════
+   Wofi Style — Minimal Dark · Catppuccin
+   ══════════════════════════════════════ */
+
+window {
+    background-color: rgba(17, 17, 27, 0.92);
+    border: 1px solid rgba(137, 180, 250, 0.3);
+    border-radius: 12px;
+    font-family: "JetBrainsMono NFP", monospace;
+    font-size: 14px;
+}
+
+#input {
+    background-color: rgba(49, 50, 68, 0.8);
+    border: 1px solid rgba(137, 180, 250, 0.2);
+    border-radius: 8px;
+    color: #cdd6f4;
+    padding: 8px 14px;
+    margin: 8px;
+    outline: none;
+}
+
+#input:focus {
+    border-color: rgba(137, 180, 250, 0.6);
+}
+
+#inner-box {
+    background: transparent;
+    padding: 4px 8px;
+}
+
+#outer-box {
+    padding: 4px;
+}
+
+#scroll {
+    margin: 0 4px 8px 4px;
+}
+
+#text {
+    color: #cdd6f4;
+    padding: 2px 8px;
+}
+
+#entry {
+    border-radius: 8px;
+    padding: 6px 8px;
+    margin: 2px 0;
+    transition: all 0.15s ease;
+}
+
+#entry:selected {
+    background-color: rgba(137, 180, 250, 0.18);
+    border: 1px solid rgba(137, 180, 250, 0.4);
+}
+
+#entry:selected #text {
+    color: #89b4fa;
+}
+
+#img {
+    margin-right: 8px;
+}

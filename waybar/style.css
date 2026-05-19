@@ -1,0 +1,187 @@
+/* ══════════════════════════════════════════════
+   Waybar Style — Minimal Dark · Catppuccin Mocha
+   ══════════════════════════════════════════════ */
+
+* {
+    font-family: "JetBrainsMono NFP", "JetBrainsMono Nerd Font Propo", monospace;
+    font-size: 13px;
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+window#waybar {
+    background: rgba(17, 17, 27, 0.85);
+    border-radius: 12px;
+    border: 1px solid rgba(137, 180, 250, 0.15);
+    color: #cdd6f4;
+    transition: background 0.3s ease;
+}
+
+/* ── Workspaces ──────────────────────────── */
+
+#workspaces {
+    background: transparent;
+    padding: 0 6px;
+}
+
+#workspaces button {
+    background: transparent;
+    color: #6c7086;
+    padding: 2px 10px;
+    border-radius: 8px;
+    margin: 4px 2px;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+}
+
+#workspaces button:hover {
+    background: rgba(137, 180, 250, 0.12);
+    color: #89b4fa;
+    border-color: rgba(137, 180, 250, 0.3);
+}
+
+#workspaces button.active {
+    background: rgba(137, 180, 250, 0.18);
+    color: #89b4fa;
+    border-color: rgba(137, 180, 250, 0.5);
+    font-weight: 600;
+}
+
+#workspaces button.urgent {
+    background: rgba(243, 139, 168, 0.2);
+    color: #f38ba8;
+    border-color: #f38ba8;
+}
+
+/* ── Window title ────────────────────────── */
+
+#window {
+    color: #a6adc8;
+    padding: 0 12px;
+    font-size: 12px;
+}
+
+/* ── Clock ───────────────────────────────── */
+
+#clock {
+    color: #cdd6f4;
+    font-weight: 600;
+    padding: 0 14px;
+}
+
+/* ── Right modules base ──────────────────── */
+
+#cpu,
+#memory,
+#battery,
+#network,
+#pulseaudio,
+#tray,
+#custom-power {
+    padding: 2px 12px;
+    margin: 4px 2px;
+    border-radius: 8px;
+    background: rgba(49, 50, 68, 0.6);
+    color: #cdd6f4;
+    transition: all 0.2s ease;
+}
+
+#cpu:hover,
+#memory:hover,
+#battery:hover,
+#network:hover,
+#pulseaudio:hover {
+    background: rgba(49, 50, 68, 0.9);
+}
+
+/* ── CPU ─────────────────────────────────── */
+
+#cpu {
+    color: #a6e3a1;
+}
+
+#cpu.warning {
+    color: #f9e2af;
+}
+
+#cpu.critical {
+    color: #f38ba8;
+}
+
+/* ── Memory ──────────────────────────────── */
+
+#memory {
+    color: #89dceb;
+}
+
+/* ── Battery states ──────────────────────── */
+
+#battery.charging {
+    color: #a6e3a1;
+}
+
+#battery.warning:not(.charging) {
+    color: #f9e2af;
+}
+
+#battery.critical:not(.charging) {
+    color: #f38ba8;
+    animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+    to { opacity: 0.4; }
+}
+
+/* ── Network ─────────────────────────────── */
+
+#network {
+    color: #89b4fa;
+}
+
+#network.disconnected {
+    color: #6c7086;
+}
+
+/* ── Audio ───────────────────────────────── */
+
+#pulseaudio {
+    color: #cba6f7;
+}
+
+#pulseaudio.muted {
+    color: #6c7086;
+}
+
+/* ── Tray ────────────────────────────────── */
+
+#tray {
+    padding: 2px 8px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background: rgba(243, 139, 168, 0.2);
+}
+
+/* ── Power button ────────────────────────── */
+
+#custom-power {
+    color: #f38ba8;
+    font-size: 15px;
+    padding: 2px 14px;
+}
+
+#custom-power:hover {
+    background: rgba(243, 139, 168, 0.2);
+    color: #f38ba8;
+}
+
+/* ══════════════════════════════════════════════ */
