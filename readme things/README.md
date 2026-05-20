@@ -35,7 +35,7 @@ sudo pacman -S hyprland waybar rofi-wayland kitty dunst hypridle hyprlock \
 
 AUR:
 ```bash
-yay -S awww-git zen-browser-bin vimix-cursors
+yay -S awww-git zen-browser-bin vimix-cursors waypaper
 ```
 
 ---
@@ -63,7 +63,7 @@ bash install.sh
 | `Super + V` | Clipboard history |
 | `Super + S` | Scratchpad |
 | `Super + F` | Fullscreen |
-| `Super + T` | Toggle float |
+| `Super + Space` | Toggle float |
 | `Super + 1-9` | Switch workspace |
 | `Super + Shift + 1-9` | Move window to workspace |
 | `Super + F10` | Focus mode (screen off, all keybinds disabled) |
@@ -74,9 +74,36 @@ bash install.sh
 
 ---
 
+## ✅ Features
+
+- [x] Hyprland config
+- [x] Waybar (status bar)
+- [x] Rofi (app launcher)
+- [x] Hyprlock (lockscreen)
+- [x] Hypridle (idle daemon)
+- [x] Dunst (notifications)
+- [x] Cliphist (clipboard manager)
+- [x] Wallpaper support (Awww)
+- [x] Blur & animations
+- [x] Focus mode (screen off + keybinds disabled)
+- [x] Windows-style keybinds
+- [x] Catppuccin Mocha theme
+- [ ] AGS / Quickshell bar (maybe)
+- [ ] Hypridle config
+- [ ] Screenshot script
+- [ ] Install script (to make it work properly)
+
+---
+
 ## 📸 Preview
 
-<!-- Add screenshots here -->
+![just-screenshot-:>](screenshot1.png)
+
+---
+
+## 🤖 Credits
+
+Vibe Coded, Maintained and Fixed By LevaxGit (me) and my friend [Claude](https://claude.ai)
 
 ---
 
