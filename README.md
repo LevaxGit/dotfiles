@@ -97,7 +97,7 @@ bash install.sh
 
 ## 📸 Preview
 
-![just-screenshot-:>](screenshot1.png)
+![Preview](readme%20things/screenshot1.png)
 
 ---
 
