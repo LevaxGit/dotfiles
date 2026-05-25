@@ -1,0 +1,110 @@
+/* ══════════════════════════════════════════
+   Rofi Theme — Matugen Dynamic Colors
+   ══════════════════════════════════════════ */
+
+* {
+    bg0:     {{colors.surface.default.hex}};
+    bg1:     {{colors.surface_container.default.hex}};
+    bg2:     {{colors.surface_container_high.default.hex}};
+    accent:  {{colors.primary.default.hex}};
+    urgent:  {{colors.error.default.hex}};
+    fg0:     {{colors.on_surface.default.hex}};
+    fg1:     {{colors.on_surface_variant.default.hex}};
+    fg2:     {{colors.outline.default.hex}};
+
+    font:                "JetBrainsMono NFP 14";
+    background-color:    transparent;
+    text-color:          @fg0;
+    border-color:        @accent;
+}
+
+window {
+    background-color:    @bg0;
+    border:              1px;
+    border-color:        @accent;
+    border-radius:       14px;
+    width:               560px;
+    padding:             12px;
+    location:            center;
+}
+
+mainbox {
+    background-color:    transparent;
+    children:            [ inputbar, listview ];
+    spacing:             10px;
+}
+
+inputbar {
+    background-color:    @bg1;
+    border-radius:       10px;
+    padding:             10px 14px;
+    spacing:             10px;
+    children:            [ prompt, entry ];
+}
+
+prompt {
+    background-color:    transparent;
+    text-color:          @accent;
+    font:                "JetBrainsMono NFP Bold 14";
+}
+
+entry {
+    background-color:    transparent;
+    text-color:          @fg0;
+    placeholder:         "Search...";
+    placeholder-color:   @fg2;
+    cursor:              text;
+}
+
+listview {
+    background-color:    transparent;
+    columns:             1;
+    lines:               8;
+    scrollbar:           false;
+    spacing:             4px;
+    fixed-height:        true;
+}
+
+element {
+    background-color:    transparent;
+    border-radius:       8px;
+    padding:             10px 12px;
+    spacing:             12px;
+    children:            [ element-icon, element-text ];
+    orientation:         horizontal;
+    cursor:              pointer;
+}
+
+element normal.normal {
+    text-color:          @fg0;
+}
+
+element alternate.normal {
+    text-color:          @fg1;
+}
+
+element selected.normal {
+    background-color:    @bg2;
+    border:              1px;
+    border-color:        @accent;
+    text-color:          @accent;
+}
+
+element normal.urgent,
+element selected.urgent {
+    background-color:    @urgent;
+}
+
+element-icon {
+    background-color:    transparent;
+    size:                32px;
+    cursor:              inherit;
+}
+
+element-text {
+    background-color:    transparent;
+    text-color:          inherit;
+    highlight:           bold {{colors.primary.default.hex}};
+    cursor:              inherit;
+    vertical-align:      0.5;
+}
