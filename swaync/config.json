@@ -21,8 +21,14 @@
   "hide-on-clear": false,
   "hide-on-action": true,
   "script-fail-notify": true,
-  "text-empty": "No Notifications",
-  "widgets": ["title", "buttons-grid", "mpris", "notifications"],
+  "text-empty": "No Notification",
+  "scripts": {
+    "sound-script": {
+      "exec": "paplay ~/.config/swaync/notification.ogg",
+      "app-name": ".*"
+    }
+  },
+  "widgets": ["title", "buttons-grid", "mpris"],
   "widget-config": {
     "title": {
       "text": "Notification Center",
@@ -53,11 +59,11 @@
         },
         {
           "label": "󰌾",
-          "command": "hyprlock"
+          "command": "playerctl pause | $HOME/.config/sway/swaylock-corrupter.sh"
         },
         {
           "label": "󰍃",
-          "command": "hyprctl dispatch exit"
+          "command": "swaymsg exit"
         },
         {
           "label": "󰆴",
@@ -82,7 +88,7 @@
           "command": "blueman-manager"
         },
         {
-          "label": "",
+          "label": "",
           "command": "kooha"
         }
       ]

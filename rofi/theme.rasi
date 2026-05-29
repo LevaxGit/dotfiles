@@ -1,16 +1,16 @@
 /* ══════════════════════════════════════════
-   Rofi Theme — Catppuccin Mocha · With Icons
+   Rofi Theme — Matugen Dynamic Colors
    ══════════════════════════════════════════ */
 
 * {
-    bg0:     rgba(17, 17, 27, 0.86);
-    bg1:     rgba(49, 50, 68, 0.71);
-    bg2:     rgba(88, 91, 112, 0.39);
-    accent:  rgba(137, 180, 250, 1.0);
-    urgent:  rgba(243, 139, 168, 1.0);
-    fg0:     rgba(205, 214, 244, 1.0);
-    fg1:     rgba(166, 173, 200, 1.0);
-    fg2:     rgba(108, 112, 134, 1.0);
+    bg0:     #141318;
+    bg1:     #201f25;
+    bg2:     #2b292f;
+    accent:  #c8bfff;
+    urgent:  #ffb4ab;
+    fg0:     #e5e1e9;
+    fg1:     #c9c5d0;
+    fg2:     #928f99;
 
     font:                "JetBrainsMono NFP 14";
     background-color:    transparent;
@@ -21,7 +21,7 @@
 window {
     background-color:    @bg0;
     border:              1px;
-    border-color:        rgba(137, 180, 250, 0.31);
+    border-color:        @accent;
     border-radius:       14px;
     width:               560px;
     padding:             12px;
@@ -84,15 +84,15 @@ element alternate.normal {
 }
 
 element selected.normal {
-    background-color:    rgba(137, 180, 250, 0.18);
+    background-color:    @bg2;
     border:              1px;
-    border-color:        rgba(137, 180, 250, 0.39);
+    border-color:        @accent;
     text-color:          @accent;
 }
 
 element normal.urgent,
 element selected.urgent {
-    background-color:    rgba(243, 139, 168, 0.18);
+    background-color:    @urgent;
 }
 
 element-icon {
@@ -104,7 +104,7 @@ element-icon {
 element-text {
     background-color:    transparent;
     text-color:          inherit;
-    highlight:           bold #89b4fa;
+    highlight:           bold #c8bfff;
     cursor:              inherit;
     vertical-align:      0.5;
 }

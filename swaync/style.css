@@ -1,19 +1,19 @@
-@define-color cc-bg #121318;
-@define-color noti-border-color #45464f;
-@define-color noti-bg #1b1b21;
-@define-color noti-bg-darker #1f1f25;
-@define-color noti-bg-hover #1f1f25;
-@define-color noti-bg-focus #1f1f25;
+@define-color cc-bg #141318;
+@define-color noti-border-color #48454f;
+@define-color noti-bg #1c1b20;
+@define-color noti-bg-darker #201f25;
+@define-color noti-bg-hover #201f25;
+@define-color noti-bg-focus #201f25;
 @define-color noti-close-bg #ffb4ab;
 @define-color noti-close-bg-hover #93000a;
-@define-color text-color #e3e1e9;
-@define-color text-color-disabled #90909a;
-@define-color bg-selected #b9c3ff;
-@define-color border-green #b9c3ff;
+@define-color text-color #e5e1e9;
+@define-color text-color-disabled #928f99;
+@define-color bg-selected #c8bfff;
+@define-color border-green #c8bfff;
 @define-color red-base #ffb4ab;
 @define-color red-hover #93000a;
-@define-color green-base #e5bad8;
-@define-color blue-base #b9c3ff;
+@define-color green-base #ecb8ce;
+@define-color blue-base #c8bfff;
 
 * {
   font-family: "JetBrainsMono NFM SemiBold", monospace;

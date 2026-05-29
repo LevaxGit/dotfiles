@@ -1,9 +1,9 @@
 /* ══════════════════════════════════════════════
-   Waybar Style — Minimal Dark · Catppuccin Mocha
+   Waybar Style — Matugen Dynamic Colors
    ══════════════════════════════════════════════ */
 
 * {
-    font-family: "JetBrainsMono NFP", "JetBrainsMono Nerd Font Propo", monospace;
+    font-family: "JetBrainsMono Nerd Font Propo", monospace;
     font-size: 13px;
     border: none;
     border-radius: 0;
@@ -13,10 +13,10 @@
 }
 
 window#waybar {
-    background: rgba(17, 17, 27, 0.85);
+    background: #141318;
     border-radius: 12px;
-    border: 1px solid rgba(137, 180, 250, 0.15);
-    color: #cdd6f4;
+    border: 1px solid #48454f;
+    color: #e5e1e9;
     transition: background 0.3s ease;
 }
 
@@ -29,7 +29,7 @@ window#waybar {
 
 #workspaces button {
     background: transparent;
-    color: #6c7086;
+    color: #928f99;
     padding: 2px 10px;
     border-radius: 8px;
     margin: 4px 2px;
@@ -38,28 +38,28 @@ window#waybar {
 }
 
 #workspaces button:hover {
-    background: rgba(137, 180, 250, 0.12);
-    color: #89b4fa;
-    border-color: rgba(137, 180, 250, 0.3);
+    background: #2b292f;
+    color: #c8bfff;
+    border-color: #c8bfff;
 }
 
 #workspaces button.active {
-    background: rgba(137, 180, 250, 0.18);
-    color: #89b4fa;
-    border-color: rgba(137, 180, 250, 0.5);
+    background: #35343a;
+    color: #c8bfff;
+    border-color: #c8bfff;
     font-weight: 600;
 }
 
 #workspaces button.urgent {
-    background: rgba(243, 139, 168, 0.2);
-    color: #f38ba8;
-    border-color: #f38ba8;
+    background: #93000a;
+    color: #ffdad6;
+    border-color: #ffb4ab;
 }
 
 /* ── Window title ────────────────────────── */
 
 #window {
-    color: #a6adc8;
+    color: #c9c5d0;
     padding: 0 12px;
     font-size: 12px;
 }
@@ -67,7 +67,7 @@ window#waybar {
 /* ── Clock ───────────────────────────────── */
 
 #clock {
-    color: #cdd6f4;
+    color: #e5e1e9;
     font-weight: 600;
     padding: 0 14px;
 }
@@ -80,12 +80,12 @@ window#waybar {
 #network,
 #pulseaudio,
 #tray,
-#custom-power {
+#custom-swaync-notification-count {
     padding: 2px 12px;
     margin: 4px 2px;
     border-radius: 8px;
-    background: rgba(49, 50, 68, 0.6);
-    color: #cdd6f4;
+    background: #201f25;
+    color: #e5e1e9;
     transition: all 0.2s ease;
 }
 
@@ -94,41 +94,41 @@ window#waybar {
 #battery:hover,
 #network:hover,
 #pulseaudio:hover {
-    background: rgba(49, 50, 68, 0.9);
+    background: #2b292f;
 }
 
 /* ── CPU ─────────────────────────────────── */
 
 #cpu {
-    color: #a6e3a1;
+    color: #ecb8ce;
 }
 
 #cpu.warning {
-    color: #f9e2af;
+    color: #c9c3dc;
 }
 
 #cpu.critical {
-    color: #f38ba8;
+    color: #ffb4ab;
 }
 
 /* ── Memory ──────────────────────────────── */
 
 #memory {
-    color: #89dceb;
+    color: #ecb8ce;
 }
 
 /* ── Battery states ──────────────────────── */
 
 #battery.charging {
-    color: #a6e3a1;
+    color: #ecb8ce;
 }
 
 #battery.warning:not(.charging) {
-    color: #f9e2af;
+    color: #c9c3dc;
 }
 
 #battery.critical:not(.charging) {
-    color: #f38ba8;
+    color: #ffb4ab;
     animation: blink 1s linear infinite;
 }
 
@@ -139,21 +139,21 @@ window#waybar {
 /* ── Network ─────────────────────────────── */
 
 #network {
-    color: #89b4fa;
+    color: #c8bfff;
 }
 
 #network.disconnected {
-    color: #6c7086;
+    color: #928f99;
 }
 
 /* ── Audio ───────────────────────────────── */
 
 #pulseaudio {
-    color: #cba6f7;
+    color: #c9c3dc;
 }
 
 #pulseaudio.muted {
-    color: #6c7086;
+    color: #928f99;
 }
 
 /* ── Tray ────────────────────────────────── */
@@ -168,20 +168,20 @@ window#waybar {
 
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
-    background: rgba(243, 139, 168, 0.2);
+    background: #93000a;
 }
 
-/* ── Power button ────────────────────────── */
+/* ── Swaync bell ─────────────────────────── */
 
-#custom-power {
-    color: #f38ba8;
+#custom-swaync-notification-count {
+    color: #c8bfff;
     font-size: 15px;
     padding: 2px 14px;
 }
 
-#custom-power:hover {
-    background: rgba(243, 139, 168, 0.2);
-    color: #f38ba8;
+#custom-swaync-notification-count:hover {
+    background: #473f77;
+    color: #e5deff;
 }
 
 /* ══════════════════════════════════════════════ */

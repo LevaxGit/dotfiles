@@ -7,7 +7,7 @@
     "margin-left": 10,
     "margin-right": 10,
     "exclusive": true,
-    "font": "JetBrainsMono NFP 13",
+    "font-family": "JetBrainsMono Nerd Font Propo 13",
 
     "modules-left": [
         "hyprland/workspaces",
@@ -43,8 +43,8 @@
         "separate-outputs": true,
         "rewrite": {
             "(.*) — Mozilla Firefox": "󰈹  $1",
-            "(.*) - fish":            "  $1",
-            "(.*) - kitty":           "  $1"
+            "(.*) - fish":            "  $1",
+            "(.*) - kitty":           "󰄛 $1"
         }
     },
 
@@ -56,14 +56,14 @@
 
     "cpu": {
         "interval": 3,
-        "format": "  {usage}%",
+        "format": "󰍛 {usage}%",
         "tooltip": true,
         "max-length": 10
     },
 
     "memory": {
         "interval": 5,
-        "format": "  {used:0.1f}G",
+        "format": " {used:0.1f}G",
         "tooltip-format": "{used:0.1f}G / {total:0.1f}G",
         "max-length": 12
     },
@@ -75,13 +75,13 @@
             "critical": 15
         },
         "format":          "{icon}  {capacity}%",
-        "format-charging": "  {capacity}%",
+        "format-charging": "󰂄 {capacity}%",
         "format-plugged":  "  {capacity}%",
-        "format-icons":    ["", "", "", "", ""]
+        "format-icons":    ["", "", "", "", ""]
     },
 
     "network": {
-        "format-wifi":         "  {essid}",
+        "format-wifi":         "  {essid}",
         "format-ethernet":     "󰈀  {ifname}",
         "format-disconnected": "󰤭  Offline",
         "tooltip-format":      "{ifname}: {ipaddr}\n{signalStrength}% signal",
@@ -91,15 +91,15 @@
 
     "pulseaudio": {
         "format":        "{icon}  {volume}%",
-        "format-muted":  "󰝟  Muted",
+        "format-muted":  "  Muted",
         "format-icons": {
-            "headphone":  "",
+            "headphone":  "",
             "hands-free": "󰋎",
             "headset":    "󰋎",
-            "phone":      "",
+            "phone":      "",
             "portable":   "",
-            "car":        "",
-            "default":    ["", "", ""]
+            "car":        "",
+            "default":    ["", "", ""]
         },
         "on-click": "pavucontrol",
         "scroll-step": 5
